@@ -80,7 +80,7 @@ case $option in
 
      groupname=$(kdialog --inputbox 'Schreiben sie bitte Name der neue Gruppe:' 0 0)
 
-    if ! [[ "$username" =~ ^[a-zA-Z0-9]+$ ]]; then
+    if ! [[ "$groupname" =~ ^[a-zA-Z0-9]+$ ]]; then
         kdialog --error "Die Gruppename darf nur alphanumerische Zeichen enthalten und darf keine Leerzeichen haben!" 80 80
         exit 1
         fi
